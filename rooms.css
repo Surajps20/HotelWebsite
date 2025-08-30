@@ -1,0 +1,104 @@
+/* rooms.css */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+        font-family: Arial, sans-serif;
+        color: #333;
+        background: url('src/img/room\ bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 30px;
+}
+.logo { color: #fff; font-size: 22px; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 15px; }
+.nav-links a { color: #fff; text-decoration: none; }
+.nav-links a.active, .nav-links a:hover { color: #f4b400; }
+.book-btn { background: #f4b400; color: #222 !important; padding: 6px 12px; border-radius: 5px; }
+
+/* Hero Section */
+.rooms-hero {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.rooms-hero h1 { font-size: 42px; text-shadow: 2px 2px 8px rgba(0,0,0,0.6); }
+.rooms-hero p { font-size: 18px; margin-top: 10px; text-shadow: 1px 1px 5px rgba(0,0,0,0.6); }
+
+/* Rooms Section */
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+.room-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: 0.3s;
+}
+.room-card:hover { transform: translateY(-5px); }
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.room-card:hover img { transform: scale(1.05); }
+.room-card h2 { margin: 15px; font-size: 22px; color: #f4b400; }
+.room-card p { margin: 10px 15px; font-size: 15px; }
+.features {
+  margin: 10px 15px;
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+}
+.features li { margin: 5px 0; }
+.rating {
+  margin: 10px 15px;
+  font-size: 18px;
+  color: #f4b400;
+}
+.price { font-weight: bold; color: #222; margin: 10px 15px; }
+.buttons { margin: 15px; display: flex; gap: 10px; }
+.btn {
+  padding: 10px 20px;
+  background: #f4b400;
+  color: #222;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.btn:hover { background: #d9a000; }
+.details {
+  padding: 10px 20px;
+  background: #222;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.details:hover { background: #444; }
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
